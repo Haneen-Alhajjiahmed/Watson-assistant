@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Control</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    
+  </head>
+  <body>
+        <script>
+                function showValue(newValue , num)
+                {
+                    switch(num){
+                        case 1:
+                        document.getElementById("range1").innerHTML=newValue;
+                        break;
+
+                        case 2:
+                        var output = document.getElementById("range2");
+                        output.innerHTML=newValue;
+                        break;
+
+                        case 3:
+                        var output = document.getElementById("range3");
+                        output.innerHTML=newValue;
+                        break;
+
+                        case 4:
+                        var output = document.getElementById("range4");
+                        output.innerHTML=newValue;
+                        break;
+
+                        case 5:
+                        var output = document.getElementById("range5");
+                        output.innerHTML=newValue;
+                        break;
+
+                        case 6:
+                        var output = document.getElementById("range6");
+                        output.innerHTML=newValue;
+                        break;
+
+                    }
+                    
+                }
+                </script>
+        <div id="wrapper"> 
+            
+                <form name = "Actuators" id = "Actuators" action="process.php" method="POST">
+                    <legend>Controlling the routation digrees : </legend>
+                    <fieldset>
+                    <div id="forms"> 
+                    <text><b> Actuator1 </b></text> <input id="Actuator1"  type="range" name="Actuator1" min="0" max="100" step="1" value="0" onchange="showValue(Actuator1.value , 1)" />
+                    <span id="range1">0</span>
+                </br>
+
+                    <text><b> Actuator2 </b></text> <input id="Actuator2"  type="range" name="Actuator2" min="0" max="100" step="1" value="0" onchange="showValue(Actuator2.value ,2)" />
+                    <span id="range2">0</span>
+                </br>
+                    <text><b> Actuator3 </b></text> <input id="Actuator3"  type="range" name="Actuator3" min="0" max="100"  step="1" value="0" onchange="showValue(this.value ,3)" />
+                    <span id="range3">0</span>
+                </br>
+                    <text><b> Actuator4 </b></text> <input id="Actuator4"  type="range" name="Actuator4" min="0" max="100"  step="1" value="0" onchange="showValue(this.value ,4)" />
+                    <span id="range4">0</span>
+                </br>
+                    <text><b> Actuator5 </b></text> <input id="Actuator5"  type="range" name="Actuator5" min="0" max="100"  step="1" value="0" onchange="showValue(this.value ,5)" />
+                    <span id="range5">0</span>
+                </br>
+                    <text><b> Actuator6 </b></text> <input id="Actuator6"  type="range" name="Actuator6" min="0" max="100"  step="1" value="0" onchange="showValue(this.value ,6)" />
+                    <span id="range6">0</span>
+                </br>
+            </div> 
+       
+            
+
+            <div id="buttons"> 
+                <input type="submit" id="save" name="save" value="save" onclick="show_message();"/>
+                <input type="submit" id="play" name="play" value="play"/>
+            </div> 
+        </fieldset>  
+        </form>
+    </br>
+        <script>
+            function show_message(){
+                alert("data have been added to the database successfully");
+            }
+        </script>
+
+
+        <form name = "directions" id = "directions" action="processDir.php" method="GET">
+            <legend>Controlling the base movement : </legend>
+            <fieldset>  
+
+                <div id="buttons"> 
+                    <button type="submit" formtarget="_blank" value="t" class="b" name="top">Top</button>
+                </br>
+                    <button type="submit" formtarget="_blank" value="r" class="dir b" name="right">Right</button>
+                    <button type="submit" formtarget="_blank" value="s" class="dir b" name="stop">Stop</button>
+                    <button type="submit" formtarget="_blank" value="l" class="dir b" name="left">Left</button>
+            </br>
+                    <button type="submit" formtarget="_blank" value="b" class="b" name="bottom">Bottom</button>
+                </div> 
+</fieldset>   
+</form>
+            </div> 
+
+            <script>
+                window.watsonAssistantChatOptions = {
+                    integrationID: "dc15bbb7-1711-46c6-b7fc-129d42ccd75b", // The ID of this integration.
+                    region: "eu-de", // The region your integration is hosted in.
+                    serviceInstanceID: "be40600f-536b-4283-b3d3-0ce578aa0ec6", // The ID of your service instance.
+                    onLoad: function(instance) { instance.render(); }
+                  };
+                setTimeout(function(){
+                  const t=document.createElement('script');
+                  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                  document.head.appendChild(t);
+                });
+              </script>
+ 
+  </body>
+</html>
