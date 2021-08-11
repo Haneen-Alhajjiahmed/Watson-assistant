@@ -9,9 +9,9 @@ In this project, we introduce IBM Watson™ Assistant and walk you through the p
 ## Create the assistant 
 1. Click the Assistants icon, and then click Create assistant.
 <img width="586" alt="Screen Shot 2021-08-08 at 9 00 04 PM" src="https://user-images.githubusercontent.com/85841915/128697544-0ea9b0a9-8731-4e3c-b39c-86c622cf6797.png">
-3. Name it, you can change it later.
+2. Name it, you can change it later.
 <img width="497" alt="Screen Shot 2021-08-08 at 9 00 12 PM" src="https://user-images.githubusercontent.com/85841915/128697561-481f4d43-9c89-4d22-b10a-a0c3c37a7c2d.png">
-5. Click create
+3. Click create
 
 ## Create a dialog skill
 A dialog skill is a container for the artifacts that define the flow of a conversation that your assistant can have with your customers.
