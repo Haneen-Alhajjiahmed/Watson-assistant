@@ -101,3 +101,17 @@ Note: you can diffrentiate between the entity and the intent by the symbols. The
 7. Attach it to your HTML code in the body tag
 <img width="1280" alt="Screen Shot 2021-08-09 at 7 48 55 PM" src="https://user-images.githubusercontent.com/85841915/128743774-d12a325b-8650-4491-8923-3a85a52a3ab8.png">
 
+# Project output
+The interface has the conversation icon in the lower right corner:
+<img width="1280" alt="Screen Shot 2021-08-11 at 1 57 07 PM" src="https://user-images.githubusercontent.com/85841915/129017971-e43f4566-7d16-4409-8859-3ec3bdcf6570.png">
+When clicking the conversation icon:
+<img width="1280" alt="Screen Shot 2021-08-11 at 1 57 24 PM" src="https://user-images.githubusercontent.com/85841915/129017978-965cab8d-0145-4db4-b469-522307579bc0.png">
+I started by typing hi and the assistant named sheldon responded. then i wrote "waht are you doing" and sheldon didn't recognize the intent. Therefore it provided me with suggestion:
+<img width="1280" alt="Screen Shot 2021-08-11 at 1 58 11 PM" src="https://user-images.githubusercontent.com/85841915/129017995-773fbb2c-ed9d-4096-b76f-7de1efba5ea9.png">
+I clicked one of the options that sheldon provides. Then I typed "show me your services". here sheldon recognize the intent and respond with the available services to it. 
+<img width="1280" alt="Screen Shot 2021-08-11 at 1 59 09 PM" src="https://user-images.githubusercontent.com/85841915/129018006-61e52aa7-8a53-4334-940b-d68032b4fcac.png">
+I clicked rotation control. Then sheldon responded:
+<img width="1280" alt="Screen Shot 2021-08-11 at 1 59 16 PM" src="https://user-images.githubusercontent.com/85841915/129018013-882fd0a3-f09f-423c-8fe9-1267529ec443.png">
+When clicking <img width="51" alt="Screen Shot 2021-08-11 at 1 59 42 PM" src="https://user-images.githubusercontent.com/85841915/129018072-ae844184-0ecb-4d3a-9779-49236d9081c5.png"> icon
+<img width="1280" alt="Screen Shot 2021-08-11 at 1 59 35 PM" src="https://user-images.githubusercontent.com/85841915/129018020-8d18768d-b003-4dbe-ae3a-ba49e5393bb6.png">
+
